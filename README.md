@@ -76,7 +76,7 @@
 - Descrição: mostra eventos com foco em festas e shows para o usuário, que pode clicar e obter mais informações sobre o evento clicado
 - Localização: meio da tela, logo abaixo dos eventos mais curtidos
 
-#Variados:
+# Variados:
 - Cor de fundo (tema noturno): azul noite/azul marinho escuro, 080A1D
 - Cor de fundo (tema claro): white, FFFFFF
 - Cor de fonte da data do evento: rosa choque, CD2784
@@ -85,7 +85,7 @@
 - Descrição: mostra eventos de temas variados para o usuário que pode clicar e obter mais informações sobre o evento clicado
 - Localização: meio da tela, logo abaixo dos eventos de festas e shows
 
-#Redes sociais do site:
+# Redes sociais do site:
 - Cor de fundo: russian violet, 0C0A40  
 - Cor de ícones e fonte com nome do site: magenta, E40AA1
 - Cor de fonte das redes do site: white, FFFFFF
