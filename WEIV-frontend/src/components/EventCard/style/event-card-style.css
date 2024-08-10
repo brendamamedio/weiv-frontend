@@ -1,0 +1,7 @@
+.event-card {
+    width: 240px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

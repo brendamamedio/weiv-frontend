@@ -1,0 +1,9 @@
+.event-category-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-category-card a {
+    color: inherit;
+}

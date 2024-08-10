@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.button {
+    background-color: #F20574;
+    width: 240px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #F20574;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 20px auto 0px auto;
+    color: white;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    transition: 0.5s;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: #171556;
+    border: 2px solid #F20574;
+}
