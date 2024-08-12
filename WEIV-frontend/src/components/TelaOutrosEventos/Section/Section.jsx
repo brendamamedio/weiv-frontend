@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Section/style/section-style.css'
+import './style/section-style.css'
 
 export const Section = ({ title, width, height, children }) => {
   const sectionStyle = {

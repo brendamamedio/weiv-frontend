@@ -1,5 +1,5 @@
 import React from 'react';
-import '../EventCategoryCard/style/event-category-card-style.css'
+import './style/event-category-card-style.css'
 
 export const EventCategoryCard = ({ title, icon }) => {
   return (

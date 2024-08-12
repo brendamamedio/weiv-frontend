@@ -1,10 +1,10 @@
 import './index.css';
 import './App.css';
-import { Section } from "./components/Section/Section";
+import { Section } from "./components/TelaOutrosEventos/Section/Section";
 import icon from './assets/icons/Schedule.svg'
-import { EventCategoryCard } from "./components/EventCategoryCard/EventCategoryCard";
-import { EventGrid } from './components/EventGrid/EventGrid';
-import { Button } from './components/Button/Button';
+import { EventCategoryCard } from "./components/TelaOutrosEventos/EventCategoryCard/EventCategoryCard";
+import { EventGrid } from './components/TelaOutrosEventos/EventGrid/EventGrid';
+import { Button } from './components/TelaOutrosEventos/Button/Button';
 import {
   Carousel,
   CarouselContent,
