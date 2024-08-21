@@ -13,11 +13,13 @@ import { Section } from "./Section/Section";
 import { EventCategoryCard } from "./EventCategoryCard/EventCategoryCard";
 import { EventGrid } from "./EventGrid/EventGrid";
 import { Button } from "./Button/Button";
-import icon from "../../assets/icons/Schedule.svg"
+import icon from "../../assets/icons/Schedule.svg";
+// import { Navbar } from "../Navbar/Navbar";
 
 function TelaOutrosEventos() {
     return (
       <>
+      <Navbar></Navbar>
         <Section title="Outros eventos" height={120}>
           <EventCategoryCard icon={icon} title="Eventos hoje"></EventCategoryCard>
           <EventCategoryCard icon={icon} title="Eventos da próxima semana"></EventCategoryCard>

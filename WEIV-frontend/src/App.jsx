@@ -1,6 +1,6 @@
-import './index.css';
-import './App.css';
-import AppRouter from './Router';
+import "./index.css";
+import "./App.css";
+import AppRouter from "./Router";
 
 function App() {
   return (

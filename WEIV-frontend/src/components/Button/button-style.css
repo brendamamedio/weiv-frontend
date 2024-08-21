@@ -1,0 +1,50 @@
+/* button-style.css */
+.btn {
+    background-color: #F20574;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid #F20574;
+    box-shadow: none;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 12px;
+    display:flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .btn-border {
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid #F20574;
+    color: #F20574;
+    font-family: "Poppins", sans-serif;
+    padding: 12px;
+    display:flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
