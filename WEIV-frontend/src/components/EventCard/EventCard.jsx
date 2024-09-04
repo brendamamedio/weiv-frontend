@@ -1,4 +1,3 @@
-import React from 'react';
 import './style/event-card-style.css'
 
 export const EventCard = ({ image, title }) => {

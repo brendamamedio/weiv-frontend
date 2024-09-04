@@ -1,4 +1,4 @@
-import "../TelaOutrosEventos/style.css"
+import "./style.css"
 
 import {
     Carousel,
@@ -9,10 +9,10 @@ import {
 } from "@/components/ui/carousel";
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Section } from "./Section/Section";
-import { EventCategoryCard } from "./EventCategoryCard/EventCategoryCard";
-import { EventGrid } from "./EventGrid/EventGrid";
-import { Button } from "./Button/Button";
+import { Section } from "../../components/Section/Section.jsx";
+import { EventCategoryCard } from "./components/EventCategoryCard/EventCategoryCard";
+import { EventGrid } from "../../components/EventGrid/EventGrid.jsx";
+import { Button } from "./components/Button/Button";
 import icon from "../../assets/icons/Schedule.svg"
 
 function TelaOutrosEventos() {

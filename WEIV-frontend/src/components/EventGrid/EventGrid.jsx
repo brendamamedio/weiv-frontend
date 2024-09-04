@@ -1,5 +1,4 @@
-import React from 'react';
-import { EventCard } from '../EventCard/EventCard';
+import { EventCard } from '../../components/EventCard/EventCard';
 import './style/event-grid-style.css'
 
 export const EventGrid = () => {

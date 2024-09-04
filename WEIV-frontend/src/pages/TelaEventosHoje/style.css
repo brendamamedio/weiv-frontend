@@ -6,3 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+body {
+    font-family: "Inter", system-ui;
+}

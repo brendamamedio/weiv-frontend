@@ -1,0 +1,23 @@
+.event-grid-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.results-count {
+    font-weight: bold;
+    color: #F20574;
+}
+
+.event-grid-footer-pages {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-pages {
+    font-weight: bold;
+    color: #F20574;
+}
