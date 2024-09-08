@@ -1,71 +1,72 @@
-import React from 'react';
-import { Container, Form, InputWrapper, Logo, ForgotPassword, Slogan } from "./Login";
-import UserIcon from '/img/icon/user.png'; 
-import PasswordIcon from '/img/icon/Key.png'; 
-import FilledInput from "@mui/material/FilledInput";
-import { Link } from 'react-router-dom';  // Corrigido para usar react-router-dom
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../Shared/Button';
-import { SocialIcons } from '../Shared/SocialIcons';
-import { Linha, Line, TextWrapper } from "../Shared/Line";
+import { Container, Form, InputWrapper, ForgotPassword, Logo, Slogan } from '../../Style/FormStyles';
+import UserIcon from '../../assets/img/icon/user.png'; 
+import PasswordIcon from '../../assets/img/icon/Key.png';
+import FilledInput from "@mui/material/FilledInput";
 
-const Login = () => {
+const Login = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Adicione aqui a lógica de autenticação
+    onLogin();
+  };
+
   return (
     <Container>
-        <div className="container">
-            <div className='container1'>
-            <Slogan>
-              <h1>Descubra, Conecte-se, Participe:</h1>
-              <p>O portal de eventos que transforma sua agenda em experiências inesquecíveis!</p>
-            </Slogan>
-              <Button>
-                <Link to="/register">Cadastrar</Link>  {/* Usando Link do react-router-dom */}
-              </Button>
-            </div>
-            <div className='container2'>
-              <Form>
-                <Logo>Conecte-Se</Logo>
-                <InputWrapper>
-                  <div className="icon">
-                    <img src={UserIcon} alt="User Icon" />
-                  </div>
-                  <FilledInput
-                    id="filled-adornment-weight"
-                    className="input"
-                    placeholder="Usuário"
-                  />
-                </InputWrapper>
-                <InputWrapper>
-                  <div className="icon">
-                    <img src={PasswordIcon} alt="Password Icon" />
-                  </div>
-                  <FilledInput
-                    id="filled-adornment-weight"
-                    className="input"
-                    type='password'
-                    placeholder="Senha"
-                  />
-                </InputWrapper>
-                <ForgotPassword>
-                  <Link to="/forgot-password">Esqueceu sua senha?</Link> {/* Atualize conforme a rota do esquecimento de senha */}
-                </ForgotPassword>
-                <Button isPrimary>
-                  <Link to="/dashboard">Conectar</Link>  {/* Atualize conforme a rota do painel principal */}
-                </Button>
-                <Linha>
-                  <Line />
-                  <TextWrapper>ou</TextWrapper>
-                  <Line />
-                </Linha>
-                <SocialIcons>
-                    <img src="/img/icon/Facebook.png" alt="Facebook" />
-                    <img src="/img/icon/Google.png" alt="Google" />
-                    <img src="/img/icon/TwitterX.png" alt="TwitterX" />
-                </SocialIcons>
-                <p><Link to="/register">Ainda não possui uma conta?</Link></p>
-              </Form>
-            </div>
+      <div className="container">
+        <div className='container1'>
+          <Slogan>
+            <h1>Descubra, Conecte-se, Participe:</h1>
+            <p>O portal de eventos que transforma sua agenda em experiências inesquecíveis!</p>
+          </Slogan>
+          <Button isPrimary>
+            <Link to="/register">Cadastrar</Link>
+          </Button>
         </div>
-    </Container >
+        <div className='container2'>
+          <Form onSubmit={handleSubmit}>
+            <Logo>Conecte-Se</Logo>
+            <InputWrapper>
+              <div className="icon">
+                <img src={UserIcon} alt="User Icon" />
+              </div>
+              <FilledInput
+                id="input-user-name"
+                className="input"
+                placeholder="Usuário"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </InputWrapper>
+            <InputWrapper>
+              <div className="icon">
+                <img src={PasswordIcon} alt="Password Icon" />
+              </div>
+              <FilledInput
+                id="input-password"
+                className="input"
+                type='password'
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </InputWrapper>
+            <ForgotPassword>
+              <Link to="/forgot-password">Esqueceu sua senha?</Link>
+            </ForgotPassword>
+            <Button style={{ backgroundColor: '#f20574', border: 'none' }} type="submit">
+              Conectar
+            </Button>
+            <p><Link to="/register">Ainda não possui uma conta?</Link></p>
+          </Form>
+        </div>
+      </div>
+    </Container>
   );
 }
 

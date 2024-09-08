@@ -87,7 +87,7 @@ export const InputWrapper = styled.div`
         color: #ffffff; /* Cor do ícone */
     }
 `;
-export const Logo = styled.form`
+export const Logo = styled.div`
     margin: 90px 0 30px 85px;
     font-size: 3rem;
     color: #F20574;
